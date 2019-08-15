@@ -1,0 +1,48 @@
+article {
+    background: white;
+    color: black;
+    font-size: 20px;
+    width: 60%;
+    margin: .5% auto;
+    border: 2px solid black;
+}
+body {
+    background: radial-gradient(yellow, orange, red);
+}
+header{
+    color: black;
+    background: lightgray !important;
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+
+
+}
+footer{
+    background: grey;
+    color: White;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border:  3px solid black;
+    font-size: 30px;
+    border-radius: 15px;
+}
+h1 {
+    font-size: 30px;
+    color: white;
+    border-bottom: 2px solid white;
+    letter-spacing: 5px;
+    
+}
+h2 {
+    font-size: 20px;
+    color: black;
+}
+.art:hover::first-letter {
+    background: grey;
+
+}
