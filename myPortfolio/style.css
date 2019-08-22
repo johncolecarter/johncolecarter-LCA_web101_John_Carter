@@ -1,22 +1,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT-pXKfsUXlWkOPC1-oXhlVJZy9B4Q97Z8hVDYgqUEoihrrsbQ1g);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
     width: 100vw;
   }
   
-  .logo {
-    width: 30%;
+  #logo {
+    width: auto;
     height: 80%;
     margin: 3% 10%;
+    font-size: 30px;
   }
   
   header {
     display: grid;
-    grid-template-columns: 40% 60%;
-    width: 50%;
+    grid-template-columns: auto 15% 15% 15% 15%;
+    margin: 2%;
+    color: white;
+
   }
   
   main {
@@ -39,12 +42,13 @@ body {
     text-align: center;
     border: 2px solid white;
   }
-  
   .has-border {
     border-radius: 25px;
-    border: 4px solid rgb(70, 147, 170);
-    background: linear-gradient(blue,#FF00FF);
+    border: 3px solid black;
+    background: transparent;
     padding: 20px; 
+    margin: 2%;
+    color: white;
   }
   
   nav {
@@ -57,7 +61,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin: 15% auto;
+    margin: 3% auto;
     grid-column: 2/3;
     border: 6px solid black;
   }
@@ -65,20 +69,20 @@ body {
   h1 {
     color: white;
     grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 2px solid #1940A9;;
+    margin: 1% auto;
+    border-bottom: 2px solid black;
   }
   
   h2 {
     grid-column: 2/3;
-    margin: 3% auto;
+    margin: 1% auto;
     font-style: italic;
   }
   
   button {
     grid-column: 2/3;
-    margin: 3% auto;
-    width: 70%;
+    margin: 1% auto;
+    width: fit-content;
     height: 15%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -91,4 +95,16 @@ body {
     letter-spacing: 16px;
     font-style: italic;
     border: 4px solid black;
+  }
+  #res:hover {
+    background: rgb(255, 255, 255, 0.5);
+  }
+  #about:hover {
+    background: rgb(255, 255, 255, 0.5);
+  }
+  #mb:hover {
+    background: rgb(255, 255, 255, 0.5);
+  }
+  #cm:hover {
+    background: rgb(255, 255, 255, 0.5);
   }

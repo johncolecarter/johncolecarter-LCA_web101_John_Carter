@@ -123,3 +123,7 @@ h1 {
     width: 65%;
     background: white;
 }
+
+@media (min-width: 576px) {
+    
+}
