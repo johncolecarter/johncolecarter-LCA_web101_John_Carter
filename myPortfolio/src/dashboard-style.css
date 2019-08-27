@@ -22,16 +22,26 @@ aside {
     color: black;
     border-radius: 15px;
 }
-h1 {
-    color:black;
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: 5px;
+div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
-h2 {
-    color: black;
+#day {
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#month {
     font-size: 20px;
-    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#day1 {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#list {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 main {
     grid-area: main;
