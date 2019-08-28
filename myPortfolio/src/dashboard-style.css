@@ -1,0 +1,112 @@
+body, html {
+    height: 100vh;
+}
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 40% 30% 10% auto 10%;
+    grid-template-areas: 
+        "aside . ."
+        ". main sect1"
+        ". article ."
+        ". . ."
+        ". . sect2";
+    background-image: url(https://picography.co/wp-content/uploads/2019/07/picography-sunset-bridge-768x512.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+aside {
+    grid-area: aside;
+    background: rgb(255, 255, 255, .5);
+    color: black;
+    border-radius: 15px;
+}
+div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#day {
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#month {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#day1 {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#list {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+main {
+    grid-area: main;
+    background: transparent;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+article {
+    grid-area: article;
+    background: transparent;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section:nth-of-type(1) {
+    grid-area: sect1;
+    background: rgb(255, 255, 255, .5);
+    border-radius: 12px;
+}
+section:nth-of-type(2) {
+    grid-area: sect2;
+    background: rgb(255, 255, 255, .5);
+    color:black;
+    border-radius: 15px;
+    text-align: center;
+}
+#calc-contain{
+    position: relative;
+    width: fit-content;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 10px 10px 10px 10px;
+  }
+  #agh{
+    position: relative;
+    float: right;
+    margin-top: 15px;
+  }
+  input[type=button] {
+    background:grey;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 7px;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  input[type=button]:active {
+    background-color: #171b38;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  input[type=button]:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  input[type = text] {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 3px auto;
+    font-size: 15px;
+    padding: 5px;
+    box-shadow: 4px 0px 12px black inset;
+  }
