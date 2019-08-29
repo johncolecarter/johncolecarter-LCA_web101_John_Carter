@@ -1,0 +1,52 @@
+body, html {
+    height: 100vh;
+    margin-left: 150px;
+
+}
+body {
+    display: grid;
+    grid-template-columns: 25% 25% 25%; 
+    grid-template-rows: 450px 324px;
+    grid-template-areas: 
+        "main main main"
+        "sect1 sect2 sect3";
+}
+main {
+    grid-area: main;
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcResrWK4RYt1Lz29z3gXbdLhSn98akPUkD8uE23y2_r2Cokrm4n1A);
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section:nth-of-type(1){
+    grid-area: sect1;
+    background:lightgray;
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+section:nth-of-type(2){
+    grid-area: sect2;
+    background:lightgray;
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+section:nth-of-type(3){
+    grid-area: sect3;
+    background:lightgray;
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+p {
+    font-size: 25px;
+    text-align: center;
+}
+
+
