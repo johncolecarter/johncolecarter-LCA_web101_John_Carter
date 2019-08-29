@@ -4,7 +4,7 @@ body, html {
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: 15% auto 15%;
+    grid-template-columns: 15% auto 17%;
     grid-template-rows: 40% 30% 10% auto 10%;
     grid-template-areas: 
         "aside . ."
@@ -21,6 +21,7 @@ aside {
     background: rgb(255, 255, 255, .5);
     color: black;
     border-radius: 15px;
+    margin: 2%;
 }
 div {
     display: flex;
@@ -62,6 +63,7 @@ section:nth-of-type(1) {
     grid-area: sect1;
     background: rgb(255, 255, 255, .5);
     border-radius: 12px;
+    margin: 2%;
 }
 section:nth-of-type(2) {
     grid-area: sect2;
@@ -69,6 +71,7 @@ section:nth-of-type(2) {
     color:black;
     border-radius: 15px;
     text-align: center;
+    margin: 2%;
 }
 #calc-contain{
     position: relative;
