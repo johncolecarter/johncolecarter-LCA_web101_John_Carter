@@ -1,0 +1,119 @@
+/* Small and up (Landscape Phones) */
+@media (max-width: 812px) {
+    body, html {
+        height: 150vh;
+    }
+    body {
+        display: grid;
+        grid-auto-columns: 100%;
+        grid-template-rows: 15% 5% 45% auto 5%;
+        grid-template-areas:
+            "header"
+            "banner"
+            "main"
+            "article"
+            "footer"; 
+    }
+    header {
+        grid-area: header;
+        background: rgb(10, 25, 224);
+        border-radius: 10px;
+    }
+    banner {
+        grid-area: banner;
+        background: lightskyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    main {
+        grid-area: main;
+        background: rgb(5, 15, 49);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    article {
+        grid-area: article;
+        background: gray;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    footer {
+        grid-area: footer;
+        background: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: black;
+        font-size: 15px;
+        font-family: 'Lexend Giga', sans-serif;
+    }
+    h1 {
+        font-size: 50px;
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+    }
+    p {
+        color: white;
+        font-family: 'Lexend Giga', sans-serif;
+    }
+    banner p {
+        display: flex;
+        flex-direction: row;
+        margin: 2px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    .hov:hover {
+        background: rgb(255, 255, 255, .5);
+    }
+    #stache {
+        width: 315px;
+        height: 250px;
+        margin: 20px;
+        border: 3px solid black;
+        border-radius: 5px;
+    }
+    h2 {
+        font-size: 20px;
+        color: rgb(60, 60, 60);
+        background: rgb(255, 255, 255, .5);
+        border: 3px solid rgb(255, 255, 255, .75);
+        border-radius: 5px;
+        margin: 20px;
+    }
+    h3 {
+        font-size: 15px;
+        margin-left: 30px;
+        font-family: 'Lexend Giga', sans-serif;
+        color: white;
+    }
+    .art {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (max-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (max-width: 1200px) {
+
+}

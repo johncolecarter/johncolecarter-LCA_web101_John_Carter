@@ -1,0 +1,103 @@
+body, html {
+    height: 150vh;
+}
+body {
+    display: grid;
+    grid-template-rows: 15% 5% 45% auto 5%;
+    grid-template-areas:
+        "header"
+        "banner"
+        "main"
+        "article"
+        "footer"; 
+}
+header {
+    grid-area: header;
+    background: rgb(10, 25, 224);
+    border-radius: 10px;
+}
+banner {
+    grid-area: banner;
+    background: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+main {
+    grid-area: main;
+    background: rgb(5, 15, 49);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+article {
+    grid-area: article;
+    background: gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+footer {
+    grid-area: footer;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-family: 'Roboto Mono', monospace;
+}
+p {
+    color: white;
+    font-family: 'Lexend Giga', sans-serif;
+}
+banner p {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.hov:hover {
+    background: rgb(255, 255, 255, .5);
+}
+#stache {
+    width: 500px;
+    height: 440px;
+    margin: 40px 40px 40px 80px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+h2 {
+    font-size: 40px;
+    color: rgb(60, 60, 60);
+    background: rgb(255, 255, 255, .5);
+    border: 3px solid rgb(255, 255, 255, .75);
+    border-radius: 5px;
+    margin: 40px 80px 65px 40px;
+    padding: 10px;
+}
+h3 {
+    font-size: 30px;
+    margin-left: 30px;
+    font-family: 'Lexend Giga', sans-serif;
+    color: white;
+}
+.art {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
