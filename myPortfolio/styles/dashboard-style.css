@@ -4,7 +4,7 @@ body, html {
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: 15% auto 17%;
+    grid-template-columns: 20% auto 17%;
     grid-template-rows: 40% 30% 10% auto 10%;
     grid-template-areas: 
         "aside . ."
@@ -28,22 +28,6 @@ div {
     display: flex;
     align-content: center;
     justify-content: center;
-}
-#day {
-    font-size: 100px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-#month {
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-#day1 {
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-#list {
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 main {
     grid-area: main;
@@ -89,13 +73,13 @@ section:nth-of-type(2) {
     margin-top: 15px;
   }
   input[type=button] {
-    background:grey;
-    width: fit-content;
+    background: rgb(255, 255, 255, .75);
+    width: 40px;
+    height: 35px;
     font-size: 15px;
     font-weight: 900;
     border-radius: 7px;
-    margin-left: 13px;
-    margin-top: 10px;
+    margin: 2px;
   }
   input[type=button]:active {
     background-color: #171b38;
@@ -116,3 +100,91 @@ section:nth-of-type(2) {
     padding: 5px;
     box-shadow: 4px 0px 12px black inset;
   }
+  #plus {
+      background: rgb(231, 93, 14);
+  }  
+  #minus {
+    background: rgb(231, 93, 14);
+    }  
+  #mult {
+    background: rgb(231, 93, 14);
+    } 
+  #divide {
+    background: rgb(231, 93, 14);
+    }
+#clear {
+    background: red;
+}
+#equal {
+    background: #666;
+}
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12.5%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  outline: 3px solid rgb(255, 255, 255, .75);
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12.5%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+  border-radius: 15px;
+}
