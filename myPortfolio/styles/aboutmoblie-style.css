@@ -1,0 +1,69 @@
+@media (max-width: 812px) {
+    body, html {
+        height: 100vh;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 30% auto 20%;
+        grid-template-areas: 
+            "header"
+            "aside"
+            "main"
+            "footer";
+            background-image: url(../img/aboutme1.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+    }
+    header {
+        grid-area: header;
+        font-family: 'Teko', sans-serif;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 3px 3px black;
+    }
+    aside {
+        grid-area: aside;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        grid-area: main;
+        padding: 20px;
+        font-family: 'Teko', sans-serif;
+        background: rgb(255, 255, 255, .25);
+        border-radius: 10px;
+    }
+    footer {
+        grid-area: footer;
+        font-family: 'Teko', sans-serif;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px black;
+    }
+    #profile {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    p {
+        font-size: 25px;
+    }
+    dl {
+        font-size: 15px;
+        margin: 0;
+    }
+    h3 {
+        font-size: 30px;
+        margin: 0;
+    }
+}
