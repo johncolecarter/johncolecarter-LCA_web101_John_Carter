@@ -1,0 +1,63 @@
+body, html {
+    height: 100vh;
+}
+body {
+    display: grid;
+    grid-template-columns: 15% auto 25%;
+    grid-template-rows: 20% auto;
+    grid-template-areas: 
+        "aside header header"
+        "article main footer";
+    background: rgb(134, 220, 247);
+}
+aside {
+    grid-area: aside;
+}
+header {
+    grid-area: header;
+    font-family: 'Teko', sans-serif;
+    font-size: 80px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article {
+    grid-area: article;
+    margin: 5px 0px;
+    padding: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+}
+main {
+    grid-area: main;
+    margin: 5px 0px;
+    padding: 10px;
+    font-family: 'Teko', sans-serif;
+} 
+footer {
+    grid-area: footer;
+    margin: 5px 0px;
+    padding: 30px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+#profile {
+    height: 160px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 25px;
+}
+.input {
+    margin: 5px 10px;
+    padding: 5px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}

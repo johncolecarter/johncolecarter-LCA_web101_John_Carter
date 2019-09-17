@@ -98,13 +98,17 @@ body {
   }
   #res:hover {
     background: rgb(255, 255, 255, 0.5);
+    box-shadow: 8px 8px 4px rgb(24, 24, 24);
   }
   #about:hover {
     background: rgb(255, 255, 255, 0.5);
+    box-shadow: 8px 8px 4px rgb(24, 24, 24);
   }
   #mb:hover {
     background: rgb(255, 255, 255, 0.5);
+    box-shadow: 8px 8px 4px rgb(24, 24, 24);
   }
   #cm:hover {
     background: rgb(255, 255, 255, 0.5);
+    box-shadow: 8px 8px 4px rgb(24, 24, 24);
   }
