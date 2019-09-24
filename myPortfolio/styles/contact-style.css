@@ -60,6 +60,10 @@ p {
     color: black;
     border: 2px solid black;
     border-radius: 5px;
+    transition: 500ms;
+}
+.input:hover {
+    transform: scale(1.15);
 }
 article {
     animation-name: fadeInOut;

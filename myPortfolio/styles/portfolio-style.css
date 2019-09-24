@@ -30,8 +30,16 @@ section {
     background: rgb(255, 255, 255, .5);
     border-radius: 10px;
     font-family: 'Teko', sans-serif;
-
 }
+.trans, .trans a {
+    transition: 700ms, color 700ms;
+}
+.trans:hover, 
+.trans:hover a {
+    transform: scale(1.1);
+    color:white;
+}
+
 main {
     grid-area: main;
     padding: 30px;
@@ -60,6 +68,10 @@ aside {
     color: black;
     border: 2px solid black;
     border-radius: 5px;
+    transition: 500ms;
+}
+.first:hover {
+    transform: scale(1.15);
 }
 a {
     color: black;
