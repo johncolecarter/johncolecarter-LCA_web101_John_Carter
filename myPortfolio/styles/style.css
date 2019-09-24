@@ -41,6 +41,7 @@ body {
     padding: 20px; 
     text-align: center;
     border: 2px solid white;
+
   }
   .has-border {
     border-radius: 25px;
@@ -49,6 +50,7 @@ body {
     padding: 20px; 
     margin: 2%;
     color: white;
+    transition: 500ms ease-in-out;
   }
   
   nav {
@@ -64,6 +66,10 @@ body {
     margin: 3% auto;
     grid-column: 2/3;
     border: 6px solid black;
+    transition: 3s ease-in;
+  }
+  #profile-pic:hover {
+    transform: rotate(180deg);
   }
   
   h1 {
@@ -101,6 +107,7 @@ body {
   #res:hover {
     background: rgb(255, 255, 255, 0.5);
     box-shadow: 8px 8px 4px rgb(24, 24, 24);
+    transform: scale(1.25);
   }
   #about:hover {
     background: rgb(255, 255, 255, 0.5);
