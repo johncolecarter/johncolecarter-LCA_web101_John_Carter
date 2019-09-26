@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles/tictactoe-style.css" />
+    <script src="../tictactoe.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      Tic Tac Toe
+    </header>
+    <article>
+      <input
+        type="button"
+        value="X"
+        onclick="changeMarkerToX()"
+        class="input"
+      />
+      <input type="reset" value="Reset" onclick="resetGame()" class="input" />
+      <input
+        type="button"
+        value="O"
+        onclick="changeMarkerToO()"
+        class="input"
+      />
+    </article>
+    <div id="div1" onclick="placeMark('div1')">X or O</div>
+    <div id="div2" onclick="placeMark('div2')">X or O</div>
+    <div id="div3" onclick="placeMark('div3')">X or O</div>
+    <div id="div4" onclick="placeMark('div4')">X or O</div>
+    <div id="div5" onclick="placeMark('div5')">X or O</div>
+    <div id="div6" onclick="placeMark('div6')">X or O</div>
+    <div id="div7" onclick="placeMark('div7')">X or O</div>
+    <div id="div8" onclick="placeMark('div8')">X or O</div>
+    <div id="div9" onclick="placeMark('div9')">X or O</div>
+  </body>
+</html>
