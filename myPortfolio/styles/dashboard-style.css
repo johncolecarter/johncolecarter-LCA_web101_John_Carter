@@ -1,129 +1,138 @@
-body, html {
-    height: 100vh;
+body,
+html {
+  height: 100vh;
 }
 body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 20% auto 17%;
-    grid-template-rows: 40% 30% 10% auto 10%;
-    grid-template-areas: 
-        "aside . ."
-        ". main sect1"
-        ". article ."
-        ". . ."
-        ". . sect2";
-    background-image: url(https://picography.co/wp-content/uploads/2019/07/picography-sunset-bridge-768x512.jpg); 
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 20% auto 17%;
+  grid-template-rows: 40% 30% 10% auto;
+  grid-template-areas:
+    "aside . ."
+    ". main sect1"
+    "sect2 article ."
+    "sect2 . .";
+  background-image: url(https://picography.co/wp-content/uploads/2019/07/picography-sunset-bridge-768x512.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 aside {
-    grid-area: aside;
-    background: rgb(255, 255, 255, .5);
-    border: 3px solid rgb(255, 255, 255, .75);
-    color: black;
-    border-radius: 15px;
-    margin: 2%;
+  grid-area: aside;
+  background: rgb(255, 255, 255, 0.5);
+  border: 3px solid rgb(255, 255, 255, 0.75);
+  color: black;
+  border-radius: 15px;
+  margin: 2%;
 }
 div {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 main {
-    grid-area: main;
-    background: transparent;
-    font-size: 90px;
-    color: white;
-    text-align: center;
+  grid-area: main;
+  background: transparent;
+  font-size: 90px;
+  color: white;
+  text-align: center;
 }
 article {
-    grid-area: article;
-    background: transparent;
-    color: white;
-    font-size: 60px;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  grid-area: article;
+  background: transparent;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 section:nth-of-type(1) {
-    grid-area: sect1;
-    background: rgb(255, 255, 255, .5);
-    border: 3px solid rgb(255, 255, 255, .75);
-    border-radius: 12px;
-    margin: 2%;
+  grid-area: sect1;
+  background: lightgray;
+  border: 3px solid black;
+  border-radius: 12px;
+  margin: 2%;
 }
 section:nth-of-type(2) {
-    grid-area: sect2;
-    background: rgb(255, 255, 255, .5);
-    border: 3px solid rgb(255, 255, 255, .75);
-    color:black;
-    border-radius: 15px;
-    text-align: center;
-    margin: 2%;
+  grid-area: sect2;
+  background: rgb(255, 255, 255, 0.5);
+  border: 3px solid rgb(255, 255, 255, 0.75);
+  color: black;
+  border-radius: 15px;
+  text-align: center;
+  margin: 2%;
 }
-#calc-contain{
-    position: relative;
-    width: fit-content;
-    border-radius: 12px;
-    margin: 0px auto;
-    padding: 10px 10px 10px 10px;
-  }
-  #agh{
-    position: relative;
-    float: right;
-    margin-top: 15px;
-  }
-  input[type=button] {
-    background: rgb(255, 255, 255, .75);
-    width: 40px;
-    height: 35px;
-    font-size: 15px;
-    font-weight: 900;
-    border-radius: 7px;
-    margin: 2px;
-  }
-  input[type=button]:active {
-    background-color: #171b38;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-  input[type=button]:hover {
-    background-color: black;
-    color: white;
-  }
-  
-  input[type = text] {
-    position: relative;
-    display: block;
-    width: fit-content;
-    margin: 3px auto;
-    font-size: 15px;
-    padding: 5px;
-    box-shadow: 4px 0px 12px black inset;
-  }
-  #plus {
-      background: rgb(231, 93, 14);
-  }  
-  #minus {
-    background: rgb(231, 93, 14);
-    }  
-  #mult {
-    background: rgb(231, 93, 14);
-    } 
-  #divide {
-    background: rgb(231, 93, 14);
-    }
+#calc-contain {
+  position: relative;
+  width: fit-content;
+  border-radius: 12px;
+  margin: 0px auto;
+  padding: 10px 10px 10px 10px;
+}
+#agh {
+  position: relative;
+  float: right;
+  margin-top: 15px;
+}
+input[type="button"] {
+  background: rgb(255, 255, 255, 0.75);
+  width: 40px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 7px;
+  margin: 2px;
+}
+input[type="button"]:active {
+  background-color: #171b38;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+input[type="button"]:hover {
+  background-color: black;
+  color: white;
+}
+
+/*input[type="text"]*/
+.inputCalc {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: 3px auto;
+  font-size: 15px;
+  padding: 5px;
+  box-shadow: 4px 0px 12px black inset;
+  color: black;
+}
+#plus {
+  background: rgb(231, 93, 14);
+}
+#minus {
+  background: rgb(231, 93, 14);
+}
+#mult {
+  background: rgb(231, 93, 14);
+}
+#divide {
+  background: rgb(231, 93, 14);
+}
 #clear {
-    background: red;
+  background: red;
 }
 #equal {
-    background: #666;
+  background: #666;
 }
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
 
 .month {
-  padding: 70px 25px;
+  padding: 25px 25px;
   width: 100%;
   background: #1abc9c;
   text-align: center;
@@ -169,7 +178,7 @@ body {font-family: Verdana, sans-serif;}
   padding: 10px 0;
   background: #eee;
   margin: 0;
-  outline: 3px solid rgb(255, 255, 255, .75);
+  border-radius: 15px;
 }
 
 .days li {
@@ -178,7 +187,7 @@ body {font-family: Verdana, sans-serif;}
   width: 12.5%;
   text-align: center;
   margin-bottom: 5px;
-  font-size:12px;
+  font-size: 12px;
   color: #777;
 }
 
@@ -187,4 +196,27 @@ body {font-family: Verdana, sans-serif;}
   background: #1abc9c;
   color: white !important;
   border-radius: 15px;
+}
+h1 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listItem {
+  color: black;
+  border: 1px solid black;
+  background: lightgray;
+  padding: 2px 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.item {
+  color: black;
+  list-style-type: number;
 }
