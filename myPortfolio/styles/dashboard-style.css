@@ -5,21 +5,21 @@ html {
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: 20% auto 17%;
-  grid-template-rows: 40% 30% 10% auto;
+  grid-template-columns: 20% 10% auto 17%;
+  grid-template-rows: 40% 20% 10% auto;
   grid-template-areas:
-    "aside . ."
-    ". main sect1"
-    "sect2 article ."
-    "sect2 . .";
-  background-image: url(https://picography.co/wp-content/uploads/2019/07/picography-sunset-bridge-768x512.jpg);
+    "aside . . ."
+    ". main main sect1"
+    ". article article sect1"
+    "sect2 sect2 . .";
+  background-image: url(../img/dash-back4.jpeg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 aside {
   grid-area: aside;
   background: rgb(255, 255, 255, 0.5);
-  border: 3px solid rgb(255, 255, 255, 0.75);
+  border: 3px solid black;
   color: black;
   border-radius: 15px;
   margin: 2%;
@@ -42,8 +42,7 @@ article {
   color: white;
   font-size: 60px;
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Shadows Into Light", cursive;
 }
 section:nth-of-type(1) {
   grid-area: sect1;
@@ -54,8 +53,8 @@ section:nth-of-type(1) {
 }
 section:nth-of-type(2) {
   grid-area: sect2;
-  background: rgb(255, 255, 255, 0.5);
-  border: 3px solid rgb(255, 255, 255, 0.75);
+  background: rgb(125, 178, 214);
+  border: 3px solid black;
   color: black;
   border-radius: 15px;
   text-align: center;
@@ -92,8 +91,7 @@ input[type="button"]:hover {
   color: white;
 }
 
-/*input[type="text"]*/
-.inputCalc {
+input[type="text"] {
   position: relative;
   display: block;
   width: fit-content;
@@ -134,7 +132,7 @@ body {
 .month {
   padding: 25px 25px;
   width: 100%;
-  background: #1abc9c;
+  background: #e035d8;
   text-align: center;
   border-radius: 15px;
 }
@@ -190,33 +188,107 @@ body {
   font-size: 12px;
   color: #777;
 }
+.light {
+  opacity: 0.5;
+}
 
 .days li .active {
   padding: 5px;
-  background: #1abc9c;
+  background: rgb(177, 22, 151);
   color: white !important;
   border-radius: 15px;
 }
-h1 {
-  font-size: 20px;
-  color: black;
-  text-align: center;
+.todo * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .todo {
+  height: 100%;
+  background: lightgray;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 50;
+  margin: 1rem 0 3rem;
+  text-align: center;
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+}
+.styling {
+  font-weight: 800;
+  color: black;
+}
+.input_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.input_div .input {
+  padding: 0.5rem 1rem;
+  height: 30px;
+  outline: none;
+  background: white;
+  width: 250px;
+  font-size: 15px;
+  margin: 0.25rem;
+  border-radius: 25px;
+  border: none;
+}
+.addButton {
+  height: 30px;
+  width: 30px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background: black;
+  color: white;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+.addButton:hover {
+  opacity: 0.5;
+}
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.listItem {
-  color: black;
-  border: 1px solid black;
-  background: lightgray;
-  padding: 2px 5px;
-  margin: 5px;
-  border-radius: 10px;
+  text-align: center;
+  margin-top: 5px;
+  padding: none;
 }
 .item {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-bottom: 2px solid white;
+}
+.item_input {
+  background: none;
+  outline: none;
+  color: white;
+  border: none;
+  width: 20px;
+  font-size: 20px;
+}
+.editButton {
+  font-size: 20px;
+  margin: 0 5px;
+  font-family: "Shadows Into Light", cursive;
+  background: none;
+  outline: none;
   color: black;
-  list-style-type: number;
+  border: none;
+  cursor: pointer;
+}
+.removeButton {
+  font-size: 20px;
+  margin: 0 5px;
+  font-family: "Shadows Into Light", cursive;
+  background: none;
+  outline: none;
+  color: Red;
+  border: none;
+  cursor: pointer;
 }

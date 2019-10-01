@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../styles/dashboard-style.css">
     <link rel="stylesheet" href="../styles/dashmobile-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://kit.fontawesome.com/0a8bf2b958.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body>
@@ -32,7 +34,7 @@
           </ul>
           
           <ul class="days">  
-            <li>30</li>
+            <li class="light">30</li>
             <li>1</li>
             <li>2</li>
             <li>3</li>
@@ -64,6 +66,10 @@
             <li>29</li>
             <li>30</li>
             <li>31</li>
+            <li class="light">1</li>
+            <li class="light">2</li>
+            <li class="light">3</li>
+
           </ul>
           
     </aside>
@@ -107,18 +113,19 @@
                     </form>
                   </div>
     </section>
-    <section>
-        <div class="todo" id="list_section">
-            <h1 id="header">To-do list</h1>
-            <ol>
-              <li class="item">Buy movie tickets</li>
-            </ol>
-            <div id="newItemButton"><button href="#">new item</button></div>
-            <form id="newItemForm">
-              <input class="itemField" type="text" id="itemField" placeholder="Item" />
-              <input type="submit" id="add" value="add" />
-            </form>
-          </div>
+    <section class="todo">
+      <h1><span class="styling">TODO</span>List</h1>
+      <div class="input_div">
+        <input class="input" type="text" placeholder="What do you want to do?">
+        <button class="addButton"><i class="fas fa-plus"></i></button>
+      </div>
+      <div class="container">
+        <div class="item">
+          <!-- <input type="text" class="item_input" value="Sport" disabled>
+          <button class="editButton">EDIT</button>
+          <button class="removeButton">REMOVE</button>
+        </div> -->
+      </div>
     </section>
     <script
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
