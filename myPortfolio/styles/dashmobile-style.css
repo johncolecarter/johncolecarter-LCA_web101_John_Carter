@@ -13,7 +13,7 @@
       "article article article"
       "aside aside aside"
       "sect2 sect2 sect2 "
-      ". sect1 .";
+      ". sect1 sect3";
     background-image: url(../img/dash-back4.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -38,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Armata", sans-serif;
   }
   article {
     grid-area: article;
@@ -46,7 +46,7 @@
     color: white;
     font-size: 40px;
     text-align: center;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Armata", sans-serif;
   }
   section:nth-of-type(1) {
     grid-area: sect1;
@@ -61,6 +61,29 @@
     border-radius: 15px;
     text-align: center;
     margin: 2%;
+  }
+  section:nth-of-type(3) {
+    grid-area: sect3;
+    background: none;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10%;
+    margin-top: 10%;
+    font-family: "Armata", sans-serif;
+  }
+  .btn {
+    padding: 3px;
+    background: rgb(255, 255, 255, 0.75);
+    border: none;
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 500ms ease-in;
+  }
+  .btn:hover {
+    transform: scale(1.15);
+    background: rgb(255, 255, 255, 0.25);
   }
   #calc-contain {
     position: relative;
@@ -128,7 +151,7 @@
     list-style-type: none;
   }
   body {
-    font-family: Verdana, sans-serif;
+    font-family: "Armata", sans-serif;
   }
 
   .month {
@@ -212,7 +235,7 @@
     margin: 1rem 0 3rem;
     text-align: center;
     color: white;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Armata", sans-serif;
   }
   .styling {
     font-weight: 800;
@@ -275,7 +298,7 @@
   .editButton {
     font-size: 20px;
     margin: 0 5px;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Armata", sans-serif;
     background: none;
     outline: none;
     color: black;
@@ -285,7 +308,7 @@
   .removeButton {
     font-size: 20px;
     margin: 0 5px;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Armata", sans-serif;
     background: none;
     outline: none;
     color: Red;

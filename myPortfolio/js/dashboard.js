@@ -53,7 +53,10 @@ addButton.addEventListener("click", check);
 
 function startTime() {
   var today = new Date();
-  var h = today.getHours() - 12;
+  var h = today.getHours();
+  var ampm = h >= 12 ? "PM" : "AM";
+  h = h % 12;
+  h = h ? h : 12;
   var m = today.getMinutes();
   var s = today.getSeconds();
   m = checkTime(m);
@@ -66,4 +69,22 @@ function checkTime(i) {
     i = "0" + i;
   } // add zero in front of numbers < 10
   return i;
+}
+
+var myLocation = document.getElementById("my-coordinates");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(displayPosition);
+  } else {
+    myLocation.innerHTML = "Not available";
+  }
+}
+
+function displayPosition(position) {
+  myLocation.innerHTML =
+    "Longitude: " +
+    position.coords.longitude +
+    " Latitude: " +
+    position.coords.latitude;
 }
