@@ -88,3 +88,11 @@ function displayPosition(position) {
     " Latitude: " +
     position.coords.latitude;
 }
+var number = document.getElementById("counter");
+number = 0;
+
+function btn() {
+  number++;
+  document.getElementById("counter").innerHTML = number;
+  console.log(number);
+}
