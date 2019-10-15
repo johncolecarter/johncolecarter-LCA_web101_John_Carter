@@ -1,35 +1,89 @@
+body,
+html {
+  height: 100vh;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT-pXKfsUXlWkOPC1-oXhlVJZy9B4Q97Z8hVDYgqUEoihrrsbQ1g);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;*/
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  #logo {
-    width: auto;
-    height: 80%;
-    margin: 3% 10%;
-    font-size: 30px;
-  }
-  
-  header {
-    display: grid;
-    grid-template-columns: auto 15% 15% 15% 15%;
-    margin: 2%;
-    color: white;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: 10% 10% auto 10%;
+  grid-template-areas:
+    "aside header"
+    "aside ."
+    "main main"
+    "footer footer";
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(34, 32, 32);
+}
+aside {
+  grid-area: aside;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  width: 150px;
+  height: 150px;
+  transition: 2s;
+}
+#logo:hover {
+  transform: scale(1.25);
+}
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.has-border {
+  padding: 20px 40px;
+  font-size: 20px;
+  color: #14b4ce;
+  border-radius: 30px;
+  margin: 0 15px;
+  transition: 1s;
+}
+.has-border:hover {
+  transform: scale(1.25);
+  color: #293378;
+  background: #14b4ce;
+}
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: #293378;
+  font-size: 30px;
+}
+#profile-pic {
+  width: 400px;
+  height: 400px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+#myName {
+  color: #14b4ce;
+  font-size: 100px;
+}
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#portfolio {
+  padding: 20px 100px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(to right, #293378, #14b4ce);
+  font-size: 20px;
+}
 
-  }
-  
-  main {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-  }
-  
-  nav > a {
+/* nav > a {
     margin: 2% 1% 3%;
     height: 10%;
     width: 20%;
@@ -148,4 +202,4 @@ body {
       50% {color: black;}
       100% {color: white;}
     }
-  }
+  } */

@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/mobile-style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <title>My Portfolio</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <title>My Portfolio</title>
+  </head>
   <body>
+    <aside>
+      <img src="../myPortfolio/img/LCA.png" alt="LCA Logo" id="logo" />
+    </aside>
     <header>
-        <h3 class="animated rubberBand delay-1s" id="logo">John Cole Carter</h3>
-        <a href="./src/resume.html" class="has-border animated fadeInRight delay-2s" id="res">Resume</a>
-        <a href="./src/about.html" class="has-border animated fadeInRight delay-3s" id="about">About Me</a>
-        <a href="./src/blog.html" class="has-border animated fadeInRight delay-4s" id="mb">My Blog</a>
-        <a href="./src/contact.html" class="has-border animated fadeInRight delay-5s" id="cm">Contact Me</a>
+      <a
+        href="./src/resume.html"
+        class="has-border animated fadeInRight delay-2s"
+        id="res"
+        >Resume</a
+      >
+      <a
+        href="./src/about.html"
+        class="has-border animated fadeInRight delay-3s"
+        id="about"
+        >About Me</a
+      >
+      <a
+        href="./src/blog.html"
+        class="has-border animated fadeInRight delay-4s"
+        id="mb"
+        >My Blog</a
+      >
+      <a
+        href="./src/contact.html"
+        class="has-border animated fadeInRight delay-5s"
+        id="cm"
+        >Contact Me</a
+      >
     </header>
     <main>
-      <img src="./img/myprofile.jpg" id="profile-pic" alt="Headshot of Me">
-      <h1>John Cole Carter</h1>
-      <h2>Student of Web Development</h2>
-      <button id="portfolio">
-        <a href="./src/portfolio.html" >Portfolio</a>
-      </button>
+      <img
+        src="../myPortfolio/img/portfolioIMG.JPG"
+        id="profile-pic"
+        alt="Headshot of Me"
+      />
+      <h1>
+        <span id="myName">John Cole Carter</span>
+        <br />
+        Student of Web Development
+      </h1>
     </main>
+    <footer>
+      <button id="portfolio">
+        <a href="./src/portfolio.html">Portfolio</a>
+      </button>
+    </footer>
   </body>
 </html>
