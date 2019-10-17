@@ -1,81 +1,81 @@
-body, html {
-    height: 98vh;
+body,
+html {
+  height: 98vh;
 }
 
-body{
-    display: grid;
-    grid-template-columns: 15% auto 25%;
-    grid-template-rows: 20% auto 45%;
-    grid-template-areas: 
-        "header header header"
-        "section main main"
-        ". article aside";
-    background-image: url(../img/portbackground.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+body {
+  display: grid;
+  grid-template-columns: 15% auto 25%;
+  grid-template-rows: 20% auto 45%;
+  grid-template-areas:
+    "header header header"
+    "section main main"
+    ". article aside";
+  background-image: url(../img/portbackground.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 header {
-    grid-area: header;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 80px;
-    font-family: 'Teko', sans-serif;
+  grid-area: header;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-family: "Teko", sans-serif;
 }
 section {
-    grid-area: section;
-    padding: 10px;
-    background: rgb(255, 255, 255, .5);
-    border-radius: 10px;
-    font-family: 'Teko', sans-serif;
+  grid-area: section;
+  padding: 10px;
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-family: "Teko", sans-serif;
 }
-.trans, .trans a {
-    transition: 700ms, color 700ms;
+.trans,
+.trans a {
+  transition: 700ms, color 700ms;
 }
-.trans:hover, 
+.trans:hover,
 .trans:hover a {
-    transform: scale(1.1);
-    color:white;
+  transform: scale(1.1);
+  color: white;
 }
 
 main {
-    grid-area: main;
-    padding: 30px;
-    font-size: 30px;
-    color: black;
-    font-family: 'Teko', sans-serif;
-
+  grid-area: main;
+  padding: 30px;
+  font-size: 30px;
+  color: black;
+  font-family: "Teko", sans-serif;
 }
 article {
-    grid-area: article;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: article;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 aside {
-    grid-area: aside;
-    background: rgb(255, 255, 255, .5);
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 20px;
-    font-family: 'Teko', sans-serif;
+  grid-area: aside;
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Teko", sans-serif;
 }
 .first {
-    margin: 5px 10px;
-    padding: 5px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-    transition: 500ms;
+  margin: 5px 10px;
+  padding: 5px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: 500ms;
 }
 .first:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 a {
-    color: black;
-    font-size: 25px;
-    padding: 10px;
-    
+  color: black;
+  font-size: 25px;
+  padding: 10px;
 }
